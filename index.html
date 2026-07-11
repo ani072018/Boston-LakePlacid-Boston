@@ -328,6 +328,30 @@
     .stats-row{grid-template-columns:1fr; gap:14px;}
   }
 
+  /* ---------- Photo gallery ---------- */
+  .photo-set{
+    display:grid;
+    gap:14px;
+    margin:28px 0 8px 0;
+  }
+  .photo-set.two{grid-template-columns:1fr 1fr;}
+  .photo-set.three{grid-template-columns:1.4fr 1fr; grid-template-rows:1fr 1fr;}
+  .photo-set.three img:first-child{grid-row:1 / 3;}
+  .photo-set img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    display:block;
+    border-radius:2px;
+    filter:saturate(1.05) contrast(1.03);
+    border:1px solid var(--hairline);
+  }
+  .photo-set.two img{aspect-ratio:4/5;}
+  .photo-set.three img{aspect-ratio:auto;}
+  @media (max-width:520px){
+    .photo-set.three{grid-template-columns:1fr 1fr;}
+  }
+
   /* ---------- Wildlife strip ---------- */
   .deer-strip{
     display:flex;
@@ -442,6 +466,10 @@
     <div class="cp-label"><span class="cp-mile">LAKE CHAMPLAIN</span><span class="cp-time">11:30 AM</span></div>
     <h2>First stop, first breath</h2>
     <p>The lake sparkled under the bright sun, and the cool breeze carried that fresh, crisp autumn air. Surrounded by colorful hills and floating leaves, it was the perfect spot to stretch, take in the view, and feel the start of our adventure sink in.</p>
+    <div class="photo-set two">
+      <img src="images/Lake%20Champlin.jpg" alt="Lake Champlain shoreline in fall" loading="lazy">
+      <img src="images/Lake%20Champlin2.jpg" alt="Lake Champlain view, second angle" loading="lazy">
+    </div>
     <aside class="note">
       <div class="note-label">5.5 hrs in</div>
       <div class="note-body">Champlain is the widest lake on the route — its far shore is Vermont's Green Mountains, already dusted in color.</div>
@@ -478,6 +506,11 @@
     <div class="cp-label"><span class="cp-mile">SUMMIT — WHITEFACE MOUNTAIN</span></div>
     <h2>4,867 feet, two lakes below</h2>
     <p>Reaching the top was a reward in itself. From the summit, the view was absolutely mesmerizing — two lakes stretched out beneath us, their waters reflecting the brilliant fall colors that surrounded them. Standing there, taking it all in, it was clear the journey along the highway and up the mountain was just as unforgettable as the view itself.</p>
+    <div class="photo-set three">
+      <img src="images/Whiteface%20Mountain.jpg" alt="View from the summit of Whiteface Mountain" loading="lazy">
+      <img src="images/Whiteface%20Mountain2.jpg" alt="Whiteface Mountain, second view" loading="lazy">
+      <img src="images/Whiteface%20Mountain3.jpg" alt="Whiteface Mountain, third view" loading="lazy">
+    </div>
     <aside class="note">
       <div class="note-label">4,867 ft</div>
       <div class="note-body">Highest drivable peak in New York. On a clear day you can see five states and part of Canada from the summit castle.</div>
