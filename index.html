@@ -50,6 +50,62 @@
   "keywords": "Boston to Lake Placid, fall foliage road trip, Whiteface Mountain, Lake Champlain, Adirondacks"
 }
 </script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How long is the Boston to Lake Placid drive?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Boston to Lake Placid is about 310 miles and takes 5.5 to 6.5 hours without stops via I-93 N, I-89 N, and I-87 N (Adirondack Northway). With a stop at Lake Champlain and photos, plan for 8-9 hours."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When is the best time for fall foliage on this route?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Last week of September to second week of October is peak. The High Peaks around Whiteface Mountain and Lake Placid turn first (late Sept), Lake Champlain and lower Adirondacks peak in early to mid-October."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Whiteface Veterans Memorial Highway open in fall?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, typically open mid-May to mid-October, 8:45 AM to 5:30 PM, weather permitting. In October it can close early for snow. Check whiteface.com for current status. Toll is about $35-45 per vehicle as of 2025."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What are the best stops between Boston and Lake Placid?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Top stops: 1) Lake Champlain (halfway, best foliage views), 2) Adirondack Northway overlooks, 3) Whiteface Veterans Memorial Highway, 4) Whiteface Mountain summit at 4,867 ft, 5) Downtown Lake Placid for dinner and shops."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can you see two lakes from Whiteface Mountain summit?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. From the summit castle and observation deck you can see Lake Placid and Lake Champlain below, both surrounded by Adirondack fall colors. On clear days you can also see Vermont's Green Mountains."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How cold is it at Whiteface summit in October?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We recorded 52°F at the summit in October, with strong wind. It is 20-30°F colder than Lake Placid village. Bring a warm jacket, hat, and gloves even if it is warm in Boston."
+      }
+    }
+  ]
+}
+</script>
 
 <style>
   :root{
@@ -563,6 +619,72 @@
     <div class="cp-label"><span class="cp-mile">DOWNTOWN LAKE PLACID</span><span class="cp-time">EVENING - FINAL STOP</span></div>
     <h2>Downtown Lake Placid Evening: Autumn Moments on the Way Back to Boston</h2>
     <p>We took time to stroll through the charming streets of Lake Placid, exploring cozy shops and soaking in the autumn atmosphere. After a hearty dinner in downtown Lake Placid, we began the long drive back to Boston, retracing the roads that had offered such vibrant fall color, peaceful mountain views, and one quiet, unexpected encounter with wildlife — a perfect blend of adventure, nature, and the simple moments that make a Boston to Lake Placid road trip unforgettable.</p>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="checkpoint fade-in" id="faq" style="padding-top:80px;">
+    <div class="cp-label"><span class="cp-mile">FAQ</span><span class="cp-time">BOSTON TO LAKE PLACID</span></div>
+    <h2>Boston to Lake Placid Fall Road Trip FAQ</h2>
+    <p style="margin-bottom:30px;">Quick answers for people planning the same fall foliage drive.</p>
+    
+    <style>
+      .faq-list{border-top:1px solid var(--hairline);}
+      .faq-item{border-bottom:1px solid var(--hairline); padding:0;}
+      .faq-q{
+        width:100%;
+        text-align:left;
+        background:none;
+        border:none;
+        color:var(--parchment);
+        font-family:'Fraunces',serif;
+        font-size:1.15rem;
+        font-weight:500;
+        padding:22px 0;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        cursor:pointer;
+      }
+      .faq-q span:last-child{font-family:'Inter',sans-serif; color:var(--gold); font-size:1.4rem; transition:transform 0.2s;}
+      .faq-item.open .faq-q span:last-child{transform:rotate(45deg);}
+      .faq-a{
+        max-height:0;
+        overflow:hidden;
+        transition:max-height 0.3s ease, padding 0.3s ease;
+        color:var(--parchment-dim);
+        font-size:0.98rem;
+        line-height:1.75;
+        padding:0 0 0 0;
+      }
+      .faq-item.open .faq-a{max-height:300px; padding:0 0 22px 0;}
+    </style>
+
+    <div class="faq-list">
+      <div class="faq-item open">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">How long is the Boston to Lake Placid drive? <span>+</span></button>
+        <div class="faq-a">About 310 miles, 5.5 to 6.5 hours without stops via I-93 N, I-89 N and I-87 N (Adirondack Northway). With Lake Champlain stop and Whiteface ascent, plan 8-9 hours total.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">When is peak fall foliage on this route? <span>+</span></button>
+        <div class="faq-a">Last week of September to second week of October. High Peaks around Whiteface and Lake Placid turn first in late September. Lake Champlain and lower elevations peak early to mid-October.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Is Whiteface Veterans Memorial Highway open in October? <span>+</span></button>
+        <div class="faq-a">Yes, usually mid-May to mid-October, 8:45 AM to 5:30 PM, weather permitting. In October it can close early for snow or ice. Check whiteface.com before you go. Vehicle toll was ~$35-45 in 2025.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">What are the best stops between Boston and Lake Placid? <span>+</span></button>
+        <div class="faq-a">1) Lake Champlain shoreline for wide lake views, 2) Adirondack Northway overlooks, 3) Whiteface Veterans Memorial Highway, 4) Whiteface Mountain summit at 4,867 ft for two lakes view, 5) Downtown Lake Placid for food and shops.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">Can you really see two lakes from Whiteface summit? <span>+</span></button>
+        <div class="faq-a">Yes — Lake Placid and Lake Champlain are both visible from the summit castle on a clear fall day. You can also see Vermont's Green Mountains and on very clear days, Montreal skyline.</div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" onclick="this.parentElement.classList.toggle('open')">How cold is Whiteface summit in fall? <span>+</span></button>
+        <div class="faq-a">We had 52°F and windy at the top in October while it was 70°F in Boston. It's 20-30°F colder than the village. Bring a jacket, hat and gloves even if Boston is warm.</div>
+      </div>
+    </div>
   </section>
 
 </div>
